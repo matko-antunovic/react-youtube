@@ -5,8 +5,9 @@ import { Image } from "semantic-ui-react";
 
 class VideoPreview extends Component {
   render() {
+    const horizontal=this.props.horizontal ? "-horizontal" : null;
     return (
-      <div className="video">
+      <div className={["video" , horizontal].join("")}>
         <div className="video__thumbnail">
           <Image src="http://via.placeholder.com/210x118" />
           <div className="video__time">
