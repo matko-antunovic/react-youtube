@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./VideoInfoBox.scss";
-import { Image, Button } from "semantic-ui-react";
+import { Image, Button,Divider } from "semantic-ui-react";
 
 class VideoInfoBox extends Component{
 
@@ -23,6 +23,7 @@ class VideoInfoBox extends Component{
       buttonTitle = 'Show Less';
     }
     return (
+   
       <div className="video-info-box">
         <Image
           className="channel-image"
@@ -45,6 +46,7 @@ class VideoInfoBox extends Component{
           <Button compact onClick={this.onToggle}>{buttonTitle}</Button>
         </div>
       </div>
+    
     );
   }
 }
