@@ -16,5 +16,5 @@ export default function(state=initialState,action){
         }
 }
 
-
+//SELECTOR
 export const getYoutubeLibraryLoaded = (state) => state.api.libraryLoaded;

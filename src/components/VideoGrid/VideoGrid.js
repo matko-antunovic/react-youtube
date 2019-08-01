@@ -4,9 +4,9 @@ import VideoPreview from "../VideoPreview/VideoPreview";
 import { Divider } from "semantic-ui-react";
 import VideoGridHeader from "./VideoGridHeader/VideoGridHeader"
 
+
 const VideoGrid = ({ hideDivider,title }) => {
   const divider = hideDivider ? null : <Divider />;
-
   return (
     <React.Fragment>
      <VideoGridHeader title={title} />
